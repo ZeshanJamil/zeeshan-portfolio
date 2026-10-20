@@ -37,7 +37,7 @@ npm run dev                  # http://localhost:3000
 
 | Variable | Required | Purpose |
 | --- | --- | --- |
-| `NEXT_PUBLIC_SITE_URL` | Recommended in production | Final site URL, e.g. `https://zeeshanjamil.vercel.app`. Enables canonical URLs and absolute OG/sitemap URLs. |
+| `NEXT_PUBLIC_SITE_URL` | Optional | Final site URL, e.g. `https://zeeshanjamil.com`. On Vercel it falls back to the project's production `*.vercel.app` domain. Enables canonical URLs and absolute OG/sitemap URLs. |
 | `RESEND_API_KEY` | For the contact form | API key from [Resend](https://resend.com). |
 | `CONTACT_FROM_EMAIL` | For the contact form | Sender, e.g. `Portfolio <onboarding@resend.dev>` (testing) or `Portfolio <hello@your-domain.com>` (verified domain). |
 | `CONTACT_TO_EMAIL` | No | Inbox that receives messages. Defaults to the email in `src/content/profile.ts`. |
@@ -74,7 +74,7 @@ To publish a missing link, set `status: "live"` and the `url`.
 
 1. Import the GitHub repo in Vercel (framework is auto-detected as Next.js).
 2. Add the environment variables above (Production + Preview).
-3. Deploy, then set `NEXT_PUBLIC_SITE_URL` to the final URL and redeploy.
+3. Deploy. The production `*.vercel.app` domain is used automatically; set `NEXT_PUBLIC_SITE_URL` only after adding a custom domain, then redeploy.
 
 Notes:
 

@@ -1,6 +1,18 @@
 import { profile } from "@/content/profile";
 
-const configuredSiteUrl = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "");
+/**
+ * Resolves the public site URL from an explicit setting, falling back to the
+ * production domain Vercel exposes at build time.
+ */
+function resolveSiteUrl(): string | undefined {
+  const explicit = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+  if (explicit) return explicit.replace(/\/$/, "");
+  const vercelHost = process.env.VERCEL_PROJECT_PRODUCTION_URL?.trim();
+  if (vercelHost) return `https://${vercelHost.replace(/\/$/, "")}`;
+  return undefined;
+}
+
+const configuredSiteUrl = resolveSiteUrl();
 
 export const site = {
   url: configuredSiteUrl ?? "http://localhost:3000",
