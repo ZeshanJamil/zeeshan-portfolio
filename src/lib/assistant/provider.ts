@@ -54,7 +54,23 @@ export async function completeChat(config: ProviderConfig, messages: ProviderMes
   }
 
   const data = (await response.json()) as { choices?: { message?: { content?: string } }[] };
-  const reply = data.choices?.[0]?.message?.content?.trim();
+  const reply = toPlainText(data.choices?.[0]?.message?.content ?? "");
   if (!reply) throw new Error("Provider returned an empty reply");
   return reply;
+}
+
+/**
+ * Removes Markdown emphasis, headings, inline code and invisible characters so replies
+ * render cleanly in the plain-text chat panel.
+ */
+function toPlainText(text: string): string {
+  return text
+    .replace(/[\u200B-\u200D\uFEFF]/g, "")
+    .replace(/\*\*(.+?)\*\*/g, "$1")
+    .replace(/__(.+?)__/g, "$1")
+    .replace(/`([^`]+)`/g, "$1")
+    .replace(/^#{1,6}\s+/gm, "")
+    .replace(/^\s*[*•]\s+/gm, "- ")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
 }
