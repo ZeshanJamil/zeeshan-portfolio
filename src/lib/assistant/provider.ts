@@ -17,16 +17,16 @@ export interface ProviderConfig {
  * Returns null when the assistant should run in offline mode.
  */
 export function getProviderConfig(): ProviderConfig | null {
-  const apiKey = process.env.AI_API_KEY;
-  const model = process.env.AI_MODEL;
+  const apiKey = process.env.AI_API_KEY?.trim();
+  const model = process.env.AI_MODEL?.trim();
   if (!apiKey || !model) return null;
 
-  const baseUrl = (process.env.AI_BASE_URL || "https://api.openai.com/v1").replace(/\/$/, "");
+  const baseUrl = (process.env.AI_BASE_URL?.trim() || "https://api.openai.com/v1").replace(/\/$/, "");
   return {
     apiKey,
     model,
     baseUrl,
-    providerName: process.env.AI_PROVIDER_NAME || new URL(baseUrl).hostname.replace(/^api\./, ""),
+    providerName: process.env.AI_PROVIDER_NAME?.trim() || new URL(baseUrl).hostname.replace(/^api\./, ""),
   };
 }
 

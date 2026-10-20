@@ -71,7 +71,7 @@ export function HosExplainer() {
           <p className="text-accent-text font-mono text-xs tracking-[0.14em] uppercase">Conceptual explainer</p>
           <span className="chip">Not product UI</span>
         </div>
-        <h3 className="display mt-4 text-3xl sm:text-4xl">How Hours of Service limits stack up in one shift</h3>
+        <h3 className="display mt-4 text-2xl sm:text-3xl">How Hours of Service limits stack up in one shift</h3>
         <p className="text-muted mt-3 max-w-2xl text-[0.9375rem] leading-relaxed">
           Drag through a simplified shift where a driver drives continuously from the moment they come on duty. Several
           limits run at the same time — which is why alerting before a limit, not after, matters.

@@ -27,7 +27,7 @@ export function Contact() {
       <div className="container-page grid gap-14 lg:grid-cols-12">
         <div className="lg:col-span-5" data-reveal>
           <p className="eyebrow">Contact</p>
-          <h2 id="contact-title" className="display mt-5 text-[clamp(2.5rem,5.5vw,4.5rem)]">
+          <h2 id="contact-title" className="display mt-5 text-[clamp(2.1rem,4.4vw,3.4rem)]">
             Have a product to build or a role to <em className="text-accent-text">fill</em>?
           </h2>
           <p className="text-muted mt-6 max-w-md text-[1.0625rem] leading-relaxed">

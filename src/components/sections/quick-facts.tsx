@@ -18,7 +18,7 @@ export function QuickFacts() {
           >
             <dt className="text-subtle font-mono text-[0.6875rem] tracking-[0.14em] uppercase">{fact.label}</dt>
             <dd className="mt-3">
-              <span className="display block text-[clamp(1.6rem,3vw,2.25rem)]">{fact.value}</span>
+              <span className="display block text-[clamp(1.35rem,2.4vw,1.8rem)]">{fact.value}</span>
               <span className="text-muted mt-2 block text-sm leading-relaxed">{fact.detail}</span>
             </dd>
           </div>

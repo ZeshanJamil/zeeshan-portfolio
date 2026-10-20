@@ -24,7 +24,7 @@ export function ProjectIndex({ projects, startIndex }: { projects: Project[]; st
             <div className="md:col-span-4">
               <h3
                 id={`project-${project.slug}`}
-                className="display text-3xl transition-colors group-hover/row:text-accent-text sm:text-4xl"
+                className="display text-2xl transition-colors group-hover/row:text-accent-text sm:text-3xl"
               >
                 {project.name}
               </h3>

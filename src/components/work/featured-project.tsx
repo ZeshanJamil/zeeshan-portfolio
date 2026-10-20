@@ -40,7 +40,7 @@ export function FeaturedProject({ project, index, flagship = false, reverse = fa
                 </span>
               ) : null}
             </div>
-            <h3 id={titleId} className="display mt-6 text-[clamp(2.5rem,5vw,4rem)]">
+            <h3 id={titleId} className="display mt-6 text-[clamp(2rem,3.8vw,3rem)]">
               {project.name}
             </h3>
             {project.aliases?.length ? (

@@ -49,7 +49,7 @@ function StudySection({ id, index, section }: { id: string; index: number; secti
     <section aria-labelledby={id} className="grid gap-8 border-t border-line py-14 md:grid-cols-12 md:gap-10 md:py-20" data-reveal>
       <div className="md:col-span-4">
         <p className="text-accent-text font-mono text-xs">{String(index).padStart(2, "0")}</p>
-        <h2 id={id} className="display mt-3 text-4xl sm:text-5xl">
+        <h2 id={id} className="display mt-3 text-3xl sm:text-4xl">
           {section.title}
         </h2>
       </div>
@@ -137,7 +137,7 @@ export default async function CaseStudyPage({ params }: PageProps<"/work/[slug]"
               <p className="eyebrow animate-rise">
                 Case study · {project.category}
               </p>
-              <h1 id="case-title" className="display animate-rise mt-6 text-[clamp(3.25rem,9vw,7rem)] [animation-delay:60ms]">
+              <h1 id="case-title" className="display animate-rise mt-6 text-[clamp(2.75rem,7vw,5rem)] [animation-delay:60ms]">
                 {project.name}
               </h1>
               <p className="text-ink animate-rise mt-6 max-w-2xl text-2xl leading-snug [animation-delay:120ms]">
@@ -213,7 +213,7 @@ export default async function CaseStudyPage({ params }: PageProps<"/work/[slug]"
 
         <section aria-labelledby="gallery-title" className="border-t border-line py-14 md:py-20">
           <div className="flex flex-wrap items-end justify-between gap-4" data-reveal>
-            <h2 id="gallery-title" className="display text-4xl sm:text-5xl">
+            <h2 id="gallery-title" className="display text-3xl sm:text-4xl">
               Product views
             </h2>
             <p className="text-subtle max-w-sm text-sm">
@@ -236,7 +236,7 @@ export default async function CaseStudyPage({ params }: PageProps<"/work/[slug]"
         <div className="container-page grid gap-10 py-20 md:grid-cols-12 md:items-center md:py-28">
           <div className="md:col-span-7" data-reveal>
             <p className="eyebrow">Working on something similar?</p>
-            <h2 id="case-cta" className="display mt-5 text-[clamp(2.25rem,5vw,3.75rem)]">
+            <h2 id="case-cta" className="display mt-5 text-[clamp(2rem,4vw,3rem)]">
               Let&apos;s talk about your <em className="text-accent-text">product</em>.
             </h2>
             <p className="text-muted mt-5 max-w-xl leading-relaxed">
@@ -258,7 +258,7 @@ export default async function CaseStudyPage({ params }: PageProps<"/work/[slug]"
               data-reveal
             >
               <span className="text-subtle font-mono text-xs tracking-[0.14em] uppercase">Next case study</span>
-              <span className="display mt-4 block text-5xl">{next.name}</span>
+              <span className="display mt-4 block text-4xl">{next.name}</span>
               <span className="text-muted mt-3 block">{next.tagline}</span>
               <span className="text-accent-text mt-8 inline-flex items-center gap-2 text-sm font-medium">
                 Read case study

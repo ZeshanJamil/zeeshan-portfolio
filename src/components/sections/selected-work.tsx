@@ -39,7 +39,7 @@ export function SelectedWork() {
 
         <div className="mt-24">
           <div className="flex items-end justify-between gap-6" data-reveal>
-            <h3 className="display text-3xl sm:text-4xl">More projects</h3>
+            <h3 className="display text-2xl sm:text-3xl">More projects</h3>
             <p className="text-subtle hidden font-mono text-xs sm:block">2020 — 2024</p>
           </div>
           <div className="mt-8">

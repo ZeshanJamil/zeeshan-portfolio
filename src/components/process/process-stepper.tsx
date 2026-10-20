@@ -100,7 +100,7 @@ export function ProcessStepper({ steps }: { steps: ProcessStep[] }) {
               <p className="text-accent-text font-mono text-xs tracking-[0.14em] uppercase">
                 Step {String(index + 1).padStart(2, "0")} / {String(steps.length).padStart(2, "0")}
               </p>
-              <h3 className="display mt-5 text-4xl sm:text-5xl">{step.title}</h3>
+              <h3 className="display mt-5 text-3xl sm:text-4xl">{step.title}</h3>
               <p className="text-ink mt-4 text-xl leading-snug">{step.summary}</p>
               <ul className="mt-8 space-y-4">
                 {step.details.map((detail) => (

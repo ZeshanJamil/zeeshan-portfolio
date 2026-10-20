@@ -9,7 +9,7 @@ export function About() {
       <div className="container-page grid gap-16 lg:grid-cols-12">
         <div className="lg:col-span-7" data-reveal>
           <p className="eyebrow">About</p>
-          <h2 id="about-title" className="display mt-5 text-[clamp(2.25rem,4.5vw,3.5rem)]">
+          <h2 id="about-title" className="display mt-5 text-[clamp(1.9rem,3.6vw,2.75rem)]">
             {about.title}
           </h2>
           <div className="text-muted mt-8 space-y-5 text-[1.0625rem] leading-relaxed">

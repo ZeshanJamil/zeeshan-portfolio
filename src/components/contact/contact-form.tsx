@@ -129,7 +129,7 @@ export function ContactForm({ email }: { email: string }) {
         <span className="bg-accent-soft text-accent-text inline-flex size-12 items-center justify-center rounded-full">
           <CheckIcon size={22} />
         </span>
-        <h3 className="display text-4xl">Message sent.</h3>
+        <h3 className="display text-3xl">Message sent.</h3>
         <p className="text-muted leading-relaxed">
           Thanks for reaching out. Your message was delivered, and I&apos;ll reply to{" "}
           <span className="text-ink">{status.email}</span> as soon as I can.

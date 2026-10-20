@@ -17,7 +17,7 @@ export function SectionHeading({ id, eyebrow, title, lead, align = "left" }: Sec
       <div className="grid gap-6 md:grid-cols-12 md:items-end" data-reveal>
         <div className="md:col-span-7">
           <p className="eyebrow">{eyebrow}</p>
-          <h2 id={id} className="display mt-5 text-[clamp(2.25rem,5vw,3.75rem)]">
+          <h2 id={id} className="display mt-5 text-[clamp(2rem,4vw,3rem)]">
             {title}
           </h2>
         </div>
@@ -33,7 +33,7 @@ export function SectionHeading({ id, eyebrow, title, lead, align = "left" }: Sec
   return (
     <div className="max-w-3xl" data-reveal>
       <p className="eyebrow">{eyebrow}</p>
-      <h2 id={id} className="display mt-5 text-[clamp(2.25rem,5vw,3.75rem)]">
+      <h2 id={id} className="display mt-5 text-[clamp(2rem,4vw,3rem)]">
         {title}
       </h2>
       {lead ? <p className="text-muted mt-5 max-w-2xl text-[1.0625rem] leading-relaxed">{lead}</p> : null}

@@ -24,7 +24,7 @@ export function ExperienceTimeline() {
                   {" – "}
                   {item.end ? <time dateTime={item.end}>{item.periodLabel.split(" – ")[1]}</time> : "Present"}
                 </p>
-                <h3 className="display mt-4 text-4xl">{item.company}</h3>
+                <h3 className="display mt-4 text-3xl">{item.company}</h3>
                 <p className="text-ink mt-2">{item.role}</p>
                 <p className="text-subtle mt-1 text-sm">{item.location}</p>
                 {item.end === null ? (

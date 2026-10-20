@@ -11,7 +11,7 @@ export default function NotFound() {
       <div aria-hidden="true" className="hairline-grid absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_at_center,black,transparent_70%)]" />
       <div className="container-page">
         <p className="eyebrow">404</p>
-        <h1 className="display mt-6 text-[clamp(3rem,8vw,6rem)]">This page doesn&apos;t exist.</h1>
+        <h1 className="display mt-6 text-[clamp(2.5rem,6vw,4.5rem)]">This page doesn&apos;t exist.</h1>
         <p className="text-muted mt-5 max-w-lg text-lg">
           The link may be outdated. The work and contact details are only a click away.
         </p>

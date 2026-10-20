@@ -191,7 +191,7 @@ export function SiteHeader() {
                 <Link
                   href={item.href}
                   onClick={() => closeMenu(false)}
-                  className="display flex items-baseline justify-between py-4 text-4xl"
+                  className="display flex items-baseline justify-between py-4 text-3xl"
                 >
                   {item.label}
                   <span className="text-subtle font-mono text-xs">0{index + 1}</span>

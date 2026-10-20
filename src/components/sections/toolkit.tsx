@@ -25,7 +25,7 @@ export function Toolkit() {
               className="card rounded-[1.5rem] p-7 sm:p-9"
             >
               <div className="flex items-baseline justify-between gap-4">
-                <h3 id={`skills-${index}`} className="display text-3xl">
+                <h3 id={`skills-${index}`} className="display text-2xl">
                   {group.title}
                 </h3>
                 <span className="text-subtle font-mono text-xs">{String(group.items.length).padStart(2, "0")}</span>

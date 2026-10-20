@@ -31,7 +31,7 @@ export function Hero() {
           <p className="eyebrow animate-rise">{hero.eyebrow}</p>
           <h1
             id="hero-title"
-            className="display animate-rise mt-7 text-[clamp(2.75rem,7vw,5.5rem)] [animation-delay:60ms]"
+            className="display animate-rise mt-7 text-[clamp(2.25rem,5.2vw,4.1rem)] [animation-delay:60ms]"
           >
             I build <em className="text-accent-text">reliable</em> web products, from complex interfaces to
             full-stack systems.
