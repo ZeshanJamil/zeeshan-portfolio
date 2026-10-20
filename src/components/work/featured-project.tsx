@@ -24,7 +24,7 @@ export function FeaturedProject({ project, index, flagship = false, reverse = fa
     <article
       aria-labelledby={titleId}
       data-reveal
-      className="group/card card relative overflow-hidden rounded-[1.75rem] shadow-[var(--shadow-2)]"
+      className="group/card card relative overflow-hidden rounded-[1.75rem] shadow-2"
     >
       <div className={`grid lg:grid-cols-12 ${reverse ? "lg:[&>*:first-child]:order-2" : ""}`}>
         <div className="flex flex-col justify-between gap-10 p-7 sm:p-10 lg:col-span-5 lg:p-12">
@@ -70,7 +70,7 @@ export function FeaturedProject({ project, index, flagship = false, reverse = fa
         </div>
 
         {project.cover ? (
-          <div className="relative min-h-[20rem] overflow-hidden border-t border-line lg:col-span-7 lg:border-t-0 lg:border-l">
+          <div className="relative min-h-80 overflow-hidden border-t border-line lg:col-span-7 lg:border-t-0 lg:border-l">
             <div aria-hidden="true" className="hairline-grid absolute inset-0 opacity-70" />
             <div
               aria-hidden="true"
@@ -88,7 +88,7 @@ export function FeaturedProject({ project, index, flagship = false, reverse = fa
                   width={project.cover.width}
                   height={project.cover.height}
                   sizes="(min-width: 1280px) 680px, (min-width: 1024px) 55vw, 92vw"
-                  className={`relative w-full transition-transform duration-700 ease-[var(--ease-out-expo)] group-hover/card:-translate-y-1.5 ${
+                  className={`relative w-full transition-transform duration-700 ease-out-expo group-hover/card:-translate-y-1.5 ${
                     flagship && phone ? "pr-[16%]" : ""
                   }`}
                 />
@@ -99,7 +99,7 @@ export function FeaturedProject({ project, index, flagship = false, reverse = fa
                     width={phone.width}
                     height={phone.height}
                     sizes="(min-width: 1024px) 180px, 28vw"
-                    className="absolute right-0 bottom-[-6%] w-[27%] drop-shadow-[0_30px_40px_rgba(0,0,0,0.45)] transition-transform duration-700 ease-[var(--ease-out-expo)] group-hover/card:-translate-y-4"
+                    className="absolute right-0 bottom-[-6%] w-[27%] drop-shadow-[0_30px_40px_rgba(0,0,0,0.45)] transition-transform duration-700 ease-out-expo group-hover/card:-translate-y-4"
                   />
                 ) : null}
               </div>

@@ -91,10 +91,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <JsonLd />
       </head>
-      <body className="flex min-h-dvh flex-col">
+      <body className="flex min-h-dvh flex-col" suppressHydrationWarning>
         <a
           href="#main"
-          className="bg-accent text-accent-contrast fixed top-3 left-3 z-[100] -translate-y-24 rounded-full px-4 py-2 text-sm font-medium transition-transform focus-visible:translate-y-0"
+          className="bg-accent text-accent-contrast fixed top-3 left-3 z-100 -translate-y-24 rounded-full px-4 py-2 text-sm font-medium transition-transform focus-visible:translate-y-0"
         >
           Skip to content
         </a>

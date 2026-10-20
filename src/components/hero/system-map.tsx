@@ -57,7 +57,7 @@ const tokenClass: Record<string, string> = {
  */
 export function SystemMap() {
   return (
-    <figure className="relative mx-auto w-full max-w-[34rem]" aria-labelledby="system-map-caption">
+    <figure className="relative mx-auto w-full max-w-136" aria-labelledby="system-map-caption">
       <ParallaxStage className="relative aspect-[5/5.4] w-full">
         <div
           aria-hidden="true"
@@ -66,7 +66,7 @@ export function SystemMap() {
         />
 
         <Layer className="top-[4%] right-0 left-[10%]" amount={6} delay={80}>
-          <div className="card overflow-hidden rounded-2xl shadow-[var(--shadow-3)]">
+          <div className="card overflow-hidden rounded-2xl shadow-3">
             <div className="flex items-center justify-between border-b border-line px-4 py-3">
               <div className="flex gap-1.5">
                 <span className="bg-surface-3 size-2.5 rounded-full" />
@@ -145,7 +145,7 @@ export function SystemMap() {
         </Layer>
 
         <Layer className="bottom-[6%] left-0 w-[70%]" amount={16} delay={220}>
-          <div className="rounded-2xl border border-line-strong bg-bg-elevated/95 p-4 shadow-[var(--shadow-3)] backdrop-blur-md">
+          <div className="rounded-2xl border border-line-strong bg-bg-elevated/95 p-4 shadow-3 backdrop-blur-md">
             <div className="mb-3 flex items-center justify-between">
               <span className="text-subtle font-mono text-[0.625rem] tracking-wider uppercase">feature.ts</span>
               <span className="text-accent-text font-mono text-[0.625rem]">TypeScript</span>
@@ -165,7 +165,7 @@ export function SystemMap() {
         </Layer>
 
         <Layer className="right-[-3%] bottom-[30%] w-[38%]" amount={26} delay={360}>
-          <div className="rounded-2xl border border-line-strong bg-surface/95 p-4 shadow-[var(--shadow-2)] backdrop-blur-md">
+          <div className="rounded-2xl border border-line-strong bg-surface/95 p-4 shadow-2 backdrop-blur-md">
             <span className="text-subtle font-mono text-[0.625rem] tracking-wider uppercase">system</span>
             <svg viewBox="0 0 160 92" className="mt-2 w-full">
               <path
@@ -213,7 +213,7 @@ export function SystemMap() {
           {["React", "Node.js"].map((label, index) => (
             <span
               key={label}
-              className="chip animate-fade-rise bg-bg-elevated/90 text-ink shadow-[var(--shadow-2)] backdrop-blur"
+              className="chip animate-fade-rise bg-bg-elevated/90 text-ink shadow-2 backdrop-blur"
               style={{ animationDelay: `${500 + index * 120}ms` }}
             >
               <span className="bg-accent-text size-1.5 rounded-full" />

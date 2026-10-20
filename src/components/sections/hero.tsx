@@ -18,11 +18,11 @@ export function Hero() {
     >
       <div
         aria-hidden="true"
-        className="hairline-grid absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_at_70%_20%,black_10%,transparent_70%)]"
+        className="hairline-grid absolute inset-0 -z-10 mask-[radial-gradient(ellipse_at_70%_20%,black_10%,transparent_70%)]"
       />
       <div
         aria-hidden="true"
-        className="absolute -top-40 right-[-10%] -z-10 size-[42rem] rounded-full opacity-60 blur-3xl"
+        className="absolute -top-40 right-[-10%] -z-10 size-168 rounded-full opacity-60 blur-3xl"
         style={{ background: "radial-gradient(closest-side, var(--glow), transparent)" }}
       />
 

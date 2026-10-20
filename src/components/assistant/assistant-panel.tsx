@@ -190,7 +190,7 @@ export function AssistantPanel({ open, onClose }: { open: boolean; onClose: () =
       onClick={(event) => {
         if (event.target === dialogRef.current) onClose();
       }}
-      className="bg-bg-elevated text-ink fixed inset-auto right-0 bottom-0 m-0 h-dvh max-h-none w-full max-w-none flex-col overflow-hidden border-line-strong p-0 shadow-[var(--shadow-3)] backdrop:bg-black/50 backdrop:backdrop-blur-[2px] open:flex not-open:hidden sm:right-6 sm:bottom-6 sm:h-[min(42rem,calc(100dvh-3rem))] sm:w-[26rem] sm:rounded-[1.5rem] sm:border"
+      className="bg-bg-elevated text-ink fixed inset-auto right-0 bottom-0 m-0 h-dvh max-h-none w-full max-w-none flex-col overflow-hidden border-line-strong p-0 shadow-3 backdrop:bg-black/50 backdrop:backdrop-blur-[2px] open:flex not-open:hidden sm:right-6 sm:bottom-6 sm:h-[min(42rem,calc(100dvh-3rem))] sm:w-104 sm:rounded-3xl sm:border"
     >
       <header className="flex items-start justify-between gap-4 border-b border-line px-5 py-4">
         <div className="flex items-center gap-3">

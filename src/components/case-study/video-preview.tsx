@@ -14,7 +14,7 @@ export function VideoPreview({ video, sourceUrl }: { video: ProjectVideo; source
 
   return (
     <figure>
-      <div className="card relative aspect-video overflow-hidden rounded-[1.75rem] bg-black shadow-[var(--shadow-3)]">
+      <div className="card relative aspect-video overflow-hidden rounded-[1.75rem] bg-black shadow-3">
         {playing && !failed ? (
           <video
             src={video.src}
@@ -35,7 +35,7 @@ export function VideoPreview({ video, sourceUrl }: { video: ProjectVideo; source
               sizes="(min-width: 1280px) 1200px, 100vw"
               className="object-cover opacity-90"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/10 to-transparent" />
             {failed ? (
               <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 p-6 text-center text-white">
                 <p className="text-lg">The video couldn&apos;t be loaded right now.</p>

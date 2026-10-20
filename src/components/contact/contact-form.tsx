@@ -221,7 +221,7 @@ export function ContactForm({ email }: { email: string }) {
             onChange={(event) => update("inquiry", event.target.value as ContactPayload["inquiry"])}
             aria-invalid={Boolean(errors.inquiry)}
             aria-describedby={errors.inquiry ? `${ids.inquiry}-error` : undefined}
-            className={`${fieldClass("inquiry")} mt-2 appearance-none bg-[url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23999' stroke-width='2'><path d='m6 9 6 6 6-6'/></svg>")] bg-[length:12px] bg-[right_1rem_center] bg-no-repeat pr-10`}
+            className={`${fieldClass("inquiry")} mt-2 appearance-none bg-[url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23999' stroke-width='2'><path d='m6 9 6 6 6-6'/></svg>")] bg-size-[12px] bg-position-[right_1rem_center] bg-no-repeat pr-10`}
           >
             <option value="" disabled>
               Choose a topic
@@ -248,7 +248,7 @@ export function ContactForm({ email }: { email: string }) {
             name="budget"
             value={form.budget}
             onChange={(event) => update("budget", event.target.value as ContactPayload["budget"])}
-            className={`${fieldClass()} mt-2 appearance-none bg-[url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23999' stroke-width='2'><path d='m6 9 6 6 6-6'/></svg>")] bg-[length:12px] bg-[right_1rem_center] bg-no-repeat pr-10`}
+            className={`${fieldClass()} mt-2 appearance-none bg-[url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23999' stroke-width='2'><path d='m6 9 6 6 6-6'/></svg>")] bg-size-[12px] bg-position-[right_1rem_center] bg-no-repeat pr-10`}
           >
             {budgetOptions.map((option) => (
               <option key={option.value || "none"} value={option.value}>
@@ -290,7 +290,7 @@ export function ContactForm({ email }: { email: string }) {
           ) : null}
         </div>
 
-        <div aria-hidden="true" className="absolute -left-[9999px] h-px w-px overflow-hidden">
+        <div aria-hidden="true" className="absolute left-[-9999px] h-px w-px overflow-hidden">
           <label htmlFor={`${baseId}-website`}>Leave this field empty</label>
           <input
             id={`${baseId}-website`}

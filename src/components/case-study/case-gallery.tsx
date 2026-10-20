@@ -19,7 +19,7 @@ function GalleryImage({ image }: { image: ProjectImage }) {
 
   if (image.frame === "browser") {
     return (
-      <div className="overflow-hidden rounded-xl border border-line-strong bg-white shadow-[var(--shadow-3)]">
+      <div className="overflow-hidden rounded-xl border border-line-strong bg-white shadow-3">
         <div className="flex items-center gap-1.5 border-b border-black/10 bg-neutral-100 px-3 py-2.5">
           <span className="size-2.5 rounded-full bg-neutral-300" />
           <span className="size-2.5 rounded-full bg-neutral-300" />
@@ -56,7 +56,7 @@ export function CaseGallery({ images }: { images: ProjectImage[] }) {
               style={{ background: "radial-gradient(ellipse at 50% 0%, var(--glow), transparent 65%)" }}
             />
             <div className={`relative flex flex-1 items-center justify-center ${isPortrait ? "px-10 pt-10" : "p-6 sm:p-10"}`}>
-              <div className={isPortrait ? "w-full max-w-[17rem]" : "w-full"}>
+              <div className={isPortrait ? "w-full max-w-68" : "w-full"}>
                 <GalleryImage image={image} />
               </div>
             </div>

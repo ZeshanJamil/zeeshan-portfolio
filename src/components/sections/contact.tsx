@@ -17,10 +17,10 @@ export function Contact() {
       aria-labelledby="contact-title"
       className="grain relative isolate scroll-mt-20 overflow-hidden border-t border-line py-24 sm:py-32"
     >
-      <div aria-hidden="true" className="hairline-grid absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_at_20%_30%,black,transparent_65%)]" />
+      <div aria-hidden="true" className="hairline-grid absolute inset-0 -z-10 mask-[radial-gradient(ellipse_at_20%_30%,black,transparent_65%)]" />
       <div
         aria-hidden="true"
-        className="absolute -bottom-40 -left-40 -z-10 size-[36rem] rounded-full opacity-60 blur-3xl"
+        className="absolute -bottom-40 -left-40 -z-10 size-144 rounded-full opacity-60 blur-3xl"
         style={{ background: "radial-gradient(closest-side, var(--glow), transparent)" }}
       />
 

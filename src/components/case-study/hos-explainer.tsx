@@ -65,7 +65,7 @@ export function HosExplainer() {
     : "All limits have more than an hour of headroom.";
 
   return (
-    <figure className="card overflow-hidden rounded-[1.75rem] shadow-[var(--shadow-2)]">
+    <figure className="card overflow-hidden rounded-[1.75rem] shadow-2">
       <div className="border-b border-line p-7 sm:p-9">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <p className="text-accent-text font-mono text-xs tracking-[0.14em] uppercase">Conceptual explainer</p>
@@ -95,7 +95,7 @@ export function HosExplainer() {
             value={hours}
             onChange={(event) => setHours(Number(event.target.value))}
             aria-valuetext={`${formatHours(hours)} since coming on duty`}
-            className="accent-[var(--accent)] mt-4 h-2 w-full cursor-pointer"
+            className="accent-accent mt-4 h-2 w-full cursor-pointer"
           />
           <div className="text-subtle mt-2 flex justify-between font-mono text-[0.6875rem]" aria-hidden="true">
             <span>0h</span>

@@ -110,11 +110,11 @@ export default async function CaseStudyPage({ params }: PageProps<"/work/[slug]"
       <header className="grain relative isolate overflow-hidden pt-32 pb-16 sm:pt-40">
         <div
           aria-hidden="true"
-          className="hairline-grid absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_at_60%_0%,black,transparent_70%)]"
+          className="hairline-grid absolute inset-0 -z-10 mask-[radial-gradient(ellipse_at_60%_0%,black,transparent_70%)]"
         />
         <div
           aria-hidden="true"
-          className="absolute -top-48 left-1/2 -z-10 size-[48rem] -translate-x-1/2 rounded-full opacity-60 blur-3xl"
+          className="absolute -top-48 left-1/2 -z-10 size-192 -translate-x-1/2 rounded-full opacity-60 blur-3xl"
           style={{ background: "radial-gradient(closest-side, var(--glow), transparent)" }}
         />
         <div className="container-page">
@@ -173,7 +173,7 @@ export default async function CaseStudyPage({ params }: PageProps<"/work/[slug]"
 
       {project.cover ? (
         <div className="container-page">
-          <figure className="card relative overflow-hidden rounded-[2rem] shadow-[var(--shadow-3)]">
+          <figure className="card relative overflow-hidden rounded-4xl shadow-3">
             <div aria-hidden="true" className="hairline-grid absolute inset-0 opacity-60" />
             <div
               aria-hidden="true"

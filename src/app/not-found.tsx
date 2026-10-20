@@ -8,7 +8,7 @@ import { ArrowRightIcon } from "@/components/ui/icons";
 export default function NotFound() {
   return (
     <section className="grain relative isolate flex min-h-[80dvh] items-center overflow-hidden pt-28 pb-20">
-      <div aria-hidden="true" className="hairline-grid absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_at_center,black,transparent_70%)]" />
+      <div aria-hidden="true" className="hairline-grid absolute inset-0 -z-10 mask-[radial-gradient(ellipse_at_center,black,transparent_70%)]" />
       <div className="container-page">
         <p className="eyebrow">404</p>
         <h1 className="display mt-6 text-[clamp(2.5rem,6vw,4.5rem)]">This page doesn&apos;t exist.</h1>

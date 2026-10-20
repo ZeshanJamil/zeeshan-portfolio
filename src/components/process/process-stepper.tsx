@@ -35,7 +35,7 @@ export function ProcessStepper({ steps }: { steps: ProcessStep[] }) {
       <div className="relative lg:col-span-5">
         <div aria-hidden="true" className="absolute top-6 bottom-6 left-[1.4rem] w-px bg-line">
           <div
-            className="bg-accent-text w-px origin-top transition-transform duration-700 ease-[var(--ease-out-expo)]"
+            className="bg-accent-text w-px origin-top transition-transform duration-700 ease-out-expo"
             style={{ height: "100%", transform: `scaleY(${progress})` }}
           />
         </div>
@@ -93,9 +93,9 @@ export function ProcessStepper({ steps }: { steps: ProcessStep[] }) {
             aria-labelledby={`process-tab-${step.id}`}
             hidden={index !== activeIndex}
             tabIndex={0}
-            className="card relative h-full overflow-hidden rounded-[1.75rem] p-8 shadow-[var(--shadow-2)] sm:p-10"
+            className="card relative h-full overflow-hidden rounded-[1.75rem] p-8 shadow-2 sm:p-10"
           >
-            <div aria-hidden="true" className="hairline-grid absolute inset-0 opacity-60 [mask-image:linear-gradient(to_bottom,black,transparent_80%)]" />
+            <div aria-hidden="true" className="hairline-grid absolute inset-0 opacity-60 mask-[linear-gradient(to_bottom,black,transparent_80%)]" />
             <div key={active.id} className="animate-fade-rise relative">
               <p className="text-accent-text font-mono text-xs tracking-[0.14em] uppercase">
                 Step {String(index + 1).padStart(2, "0")} / {String(steps.length).padStart(2, "0")}

@@ -32,7 +32,7 @@ export function AssistantLauncher() {
         onFocus={() => void loadPanel()}
         aria-haspopup="dialog"
         aria-expanded={open}
-        className={`group/launcher border-line-strong bg-bg-elevated/90 text-ink hover:border-accent-text/60 fixed right-4 bottom-4 z-40 inline-flex h-12 items-center gap-2.5 rounded-full border pr-5 pl-4 text-sm font-medium shadow-[var(--shadow-3)] backdrop-blur-xl transition-[border-color,transform,opacity] duration-300 sm:right-6 sm:bottom-6 ${
+        className={`group/launcher border-line-strong bg-bg-elevated/90 text-ink hover:border-accent-text/60 fixed right-4 bottom-4 z-40 inline-flex h-12 items-center gap-2.5 rounded-full border pr-5 pl-4 text-sm font-medium shadow-3 backdrop-blur-xl transition-[border-color,transform,opacity] duration-300 sm:right-6 sm:bottom-6 ${
           open ? "pointer-events-none translate-y-2 opacity-0" : "opacity-100"
         }`}
       >

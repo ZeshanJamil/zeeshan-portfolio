@@ -48,7 +48,7 @@ export function About() {
                 key={principle.title}
                 data-reveal
                 style={{ ["--reveal-index" as string]: index }}
-                className="card rounded-[1.5rem] p-7"
+                className="card rounded-3xl p-7"
               >
                 <div className="flex items-center gap-4">
                   <span className="text-accent-text font-mono text-xs">{String(index + 1).padStart(2, "0")}</span>

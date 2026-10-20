@@ -22,7 +22,7 @@ export function Toolkit() {
               aria-labelledby={`skills-${index}`}
               data-reveal
               style={{ ["--reveal-index" as string]: index % 2 }}
-              className="card rounded-[1.5rem] p-7 sm:p-9"
+              className="card rounded-3xl p-7 sm:p-9"
             >
               <div className="flex items-baseline justify-between gap-4">
                 <h3 id={`skills-${index}`} className="display text-2xl">
