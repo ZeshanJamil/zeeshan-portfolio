@@ -43,9 +43,9 @@ export async function POST(request: Request) {
     return reply({ ok: false, code: "invalid", errors }, 422);
   }
 
-  const apiKey = process.env.RESEND_API_KEY;
-  const from = process.env.CONTACT_FROM_EMAIL;
-  const to = process.env.CONTACT_TO_EMAIL || profile.email;
+  const apiKey = process.env.RESEND_API_KEY?.trim();
+  const from = process.env.CONTACT_FROM_EMAIL?.trim();
+  const to = process.env.CONTACT_TO_EMAIL?.trim() || profile.email;
 
   if (!apiKey || !from) {
     return reply({ ok: false, code: "not_configured" }, 503);
